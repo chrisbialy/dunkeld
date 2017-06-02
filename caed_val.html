@@ -1,0 +1,33 @@
+<html lang="en_GB"><head>
+  <title>The Art of Web ~ JavaScript: Form Validation: Credit Cards</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript">var cc_number_saved="";function checkLuhn(input)
+{var sum=0;var numdigits=input.length;var parity=numdigits%2;for(var i=0;i<numdigits;i++){var digit=parseInt(input.charAt(i))
+if(i%2==parity)digit*=2;if(digit>9)digit-=9;sum+=digit;}
+return(sum%10)==0;}</script>
+</head>
+
+<body>
+
+<h1>Checking for valid credit card numbers</h1>
+
+<form method="post" action="/cc-validate.html" onsubmit="return false;">
+<fieldset>
+Card Number: <input type="text" size="24" maxlength="20" name="cc_number" onblur="
+  // save input string and strip out non-numbers
+  cc_number_saved = this.value;
+  this.value = this.value.replace(/[^\d]/g, '');
+  if(!checkLuhn(this.value)) {
+    alert('Sorry, that is not a valid number - please try again!');
+    this.value = '';
+  }
+" onfocus="
+  // restore saved string
+  if(this.value != cc_number_saved) this.value = cc_number_saved;
+"> <input type="submit">
+</fieldset>
+</form>
+
+
+
+</body></html>

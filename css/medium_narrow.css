@@ -1,0 +1,128 @@
+
+
+
+
+.container_Copyright{
+	height:300px;
+	background-image:url('../img/scotland2.jpg');
+	opacity:0.7;
+	/* Image is centered vertically and horizontally at all times */
+	background-position: center;
+	/* Image doesn't repeat */
+	background-repeat: no-repeat;
+	/* This is what makes the background image rescale based on its container's size */
+    background-size: cover;
+    display: table;
+    width: 100%;
+}
+
+article h1 {
+color:white;
+}
+address {
+	font-size:1.2em;
+	
+}
+.feature h1{
+	font-size:4em;
+	line-height:70px;
+	
+}
+
+.feature_small h1{
+	font-size:2.5em;
+	line-height:34px;
+	
+}
+
+
+aside {
+	height:100px;
+	background-image:url('../img/facebook_300_300.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-left:43%;
+}
+/*
+** Logo Narrwo Hidden
+*/
+
+.logoo_narrow {
+	display:none;
+}
+.hidden_narrow_bottom_menu {
+	
+		visibility:hidden;
+}
+/*
+** Nav
+*/
+
+nav#main ul {
+    list-style-type: none;
+    margin:0px;
+    margin-top: 20px;
+    padding: 0;
+    float: right;
+}
+
+
+
+
+nav#main ul li {
+	display:inline-block;
+	margin-right:20px;
+}
+
+nav#main ul li:last-child {
+	margin-right:0;
+}
+
+nav#main ul li a {
+	font-size:78%;
+	text-transform:uppercase;
+	font-weight:600;
+}
+
+nav#main ul li a:not(.button) {
+	    color: #2a7137;
+}
+/*
+** Buttons
+*/
+
+.button {
+	padding:14px 30px;
+	border-radius:5px;
+}
+
+.button-primary {
+	 background-color: #2a7137;
+}
+.button-primary:hover {
+	    background-color: white;
+	color:#2a7137;
+}
+
+.button-secondary,
+.button-secondary:hover {
+	background-color:#fff;
+	color:#3a3a3a;
+}
+#cssmenu #menu-button {
+ display:none;
+}
+.hidden_banner{
+	display:none;
+}
+.hidden_footer{
+	display:none;
+}
+.recent_small h2 {
+	color:#000;
+	text-transform: uppercase;
+	letter-spacing:3px;
+	position: absolute;
+    left: 35%;
+    top: 45%;
+	}
